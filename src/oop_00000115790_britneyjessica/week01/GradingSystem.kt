@@ -10,8 +10,10 @@ fun main () {
         else -> "D"
     }
 
-    val
+    val studentId: String? = null
+    val idLength = studentId?.length ?: 0
 
+    println("Panjang ID: $idLength")
     println("Nama: $name, Nilai: $score")
     println("Grade: $grade")
     println("Status: ${calculateStatus(score)}")
