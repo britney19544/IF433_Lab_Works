@@ -10,6 +10,8 @@ fun main () {
         else -> "D"
     }
 
-    println("Nama: " + name + ", Nilai: " + score)
+    val
+
+    println("Nama: $name, Nilai: $score")
     println("Grade: $grade")
 }
