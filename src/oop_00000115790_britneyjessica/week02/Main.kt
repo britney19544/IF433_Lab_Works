@@ -42,5 +42,29 @@ fun main() {
         println("Pilihan ngawur, pendaftaran batal!")
     }
 
-}
 
+    println("=== LIBRARY LOAN SYSTEM ===")
+
+    print("Masukkan Judul Buku: ")
+    val title = scanner.nextLine()
+
+    print("Masukkan Nama Peminjam: ")
+    val borrower = scanner.nextLine()
+
+    print("Masukkan Lama Pinjam (hari): ")
+    var duration = scanner.nextInt()
+
+    // Validasi
+    if (duration < 1) {
+        println("Durasi tidak valid. Diubah menjadi 1 hari.")
+        duration = 1
+    }
+
+    val loan = Loan(title, borrower, duration)
+
+    println("\n--- Detail Peminjaman ---")
+    println("Judul Buku : ${loan.bookTitle}")
+    println("Peminjam   : ${loan.borrower}")
+    println("Durasi     : ${loan.loanDuration} hari")
+    println("Total Denda: Rp ${loan.calculateFine()}")
+}
