@@ -1,17 +1,9 @@
 package oop_00000115790_britneyjessica.week02
 
-class Student (
+class Student(
     val name: String,
     val nim: String,
-    var major
+    var major: String
 ){
-    init {
-        //validasi sederhana:
-        if (nim.length != 5) {
-            println("WARNING: Objek tercipta dengan NIM ($nim) yang tidka valid!")
-            println("Data mahasiswa $name mungkin akan bermasalah di sistem.")
-        } else {
-            println("LOG: Objek Student $name berhasil dialokasikan di Memory.")
-        }
-    }
+
 }
