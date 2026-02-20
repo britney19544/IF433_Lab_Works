@@ -17,3 +17,10 @@ class Player(val username: String) {
         }
     }
 }
+
+fun main() {
+    val player = Player("Britney")
+
+    player.addXp(50)
+    player.addXp(60)
+}
