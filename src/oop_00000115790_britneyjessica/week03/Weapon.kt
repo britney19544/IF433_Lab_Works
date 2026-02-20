@@ -25,3 +25,13 @@ class Weapon(val name: String) {
             else -> "Common"
         }
 }
+
+fun main() {
+    val sword = Weapon("Pig Slayer")
+
+    sword.damage = -50
+    sword.damage = 9999
+
+    println("Damage: ${sword.damage}")
+    println("Tier: ${sword.tier}")
+}
