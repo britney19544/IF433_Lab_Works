@@ -12,3 +12,4 @@ open class Vehicle(val brand: String) {
         println("Beep beep!")
     }
 }
+
