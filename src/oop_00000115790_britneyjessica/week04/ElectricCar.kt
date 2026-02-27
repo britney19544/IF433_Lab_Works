@@ -10,3 +10,11 @@ class ElectricCar(
         println("$brand berakselerasi dalam sunyi. Kapasitas baterai: $batteryCapacity%.")
     }
 }
+
+fun main() {
+    val tesla = ElectricCar("Tesla", 4, 85)
+
+    tesla.accelerate()
+    tesla.honk()
+    tesla.openTrunk()
+}
