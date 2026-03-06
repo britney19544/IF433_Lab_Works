@@ -5,7 +5,6 @@ abstract class PaymentMethod(val accountName: String) {
 }
 
 fun main() {
-    // Step 4: Instantiation
     val myEWallet = EWallet("User123", 50000.0)
     val myCreditCard = CreditCard("User123", 100000.0)
 
