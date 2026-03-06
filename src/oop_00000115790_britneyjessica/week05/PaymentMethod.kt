@@ -16,5 +16,12 @@ fun main() {
         println("--- Memproses pembayaran untuk: ${payment.accountName} ---")
         payment.processPayment(75000.0)
 
+        // smart casting
+        if (payment is EWallet) {
+            println("Mendeteksi E-Wallet, mencoba pemulihan saldo...")
+            payment.topUp(50000.0) // Smart cast allows calling topUp
+            payment.processPayment(75000.0) // Try again
+        }
+
     }
 }
