@@ -11,7 +11,6 @@ fun main() {
 
     val paymentList: List<PaymentMethod> = listOf(myEWallet, myCreditCard)
 
-    // Checkpoint 10 logic: Initial loop
     for (payment in paymentList) {
         println("--- Memproses pembayaran untuk: ${payment.accountName} ---")
         payment.processPayment(75000.0)
