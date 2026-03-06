@@ -19,8 +19,8 @@ fun main() {
         // smart casting
         if (payment is EWallet) {
             println("Mendeteksi E-Wallet, mencoba pemulihan saldo...")
-            payment.topUp(50000.0) // Smart cast allows calling topUp
-            payment.processPayment(75000.0) // Try again
+            payment.topUp(50000.0)
+            payment.processPayment(75000.0)
         }
 
     }
