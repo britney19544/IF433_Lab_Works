@@ -49,3 +49,4 @@ fun main() {
     println("==== Matikan Semua Switch ====")
     hub.turnOffAllSwitches()
 }
+
