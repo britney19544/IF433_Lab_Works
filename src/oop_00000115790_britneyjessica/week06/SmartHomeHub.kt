@@ -42,10 +42,10 @@ fun main() {
     hub.addDevice(speaker)
     hub.addDevice(cctv)
 
-    println("=== Security Mode Aktif ===")
+    println("==== Security Mode Aktif ====")
     hub.activateSecurityMode()
 
     println()
-    println("=== Matikan Semua Switch ===")
+    println("==== Matikan Semua Switch ====")
     hub.turnOffAllSwitches()
 }
