@@ -11,3 +11,4 @@ class Button(override val name: String) : Clickable {
         println("Tombol '$name' berhasil diklik!")
     }
 }
+
